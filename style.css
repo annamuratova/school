@@ -1,43 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     width: calc(100% - 200px);
     margin: 0 auto;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     margin: 0;
 }
-nav ul li{
+
+nav ul li {
     margin-right: 20px;
     color: #242243;
 }
+
 .nav-right a,
-     .button{
+.button {
     padding: 12px 24px;
 }
-.nav-right a{
+
+.nav-right a {
     color: #09B451;
     text-decoration: none;
-     font-family: 'Open Sans';
+    font-family: 'Open Sans';
     font-weight: bolder;
 }
-.button{
+
+.button {
     background-color: #09B451;
     border: none;
     border-radius: 5px;
     color: #fff;
 }
-    
-  
+
+.cards {
+    margin: 50px 0;
+}
+
+.cards .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+.card .detail {
+    padding: 15px;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.top p {
+    max-width: 295px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #333;
+}
+.top .ikon i,
+.bottom .week i{
+    color: #09B451;
+}
+.bottom .week p{
+    display: inline-block;
+    margin-right: 10px;
+}
+.bottom .prise{
+    color: #09B451;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px 20px;
+}
