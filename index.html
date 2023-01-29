@@ -13,18 +13,21 @@
     <div class="container">
         <nav>
             <img src="./images/logo.png" alt="">
-            <ul>
+            <i class="fas fa-bars" id="ham-menu" aria-hidden="true"></i>
+            <ul id="nav-bar">
                 <li>Home</li>
                 <li>Courses</li>
                 <li>Instuctors</li>
                 <li>Schedules</li>
                 <li>Contact Us</li>
+                <li>
+                    <div class="nav-right">
+                        <i class="fas fa-search"></i>
+                        <a href="#">Login</a>
+                        <button class="button">Register</button>
+                    </div>
+                </li>
             </ul>
-            <div class="nav-right">
-                <i class="fas fa-search"></i>
-                <a href="#">Login</a>
-                <button class="button">Register</button>
-            </div>
         </nav>
         <main>
             <div class="left">
@@ -298,7 +301,7 @@
     <footer>
         <div class="footer">
             <div class="social">
-              <p>WiSchool</p>
+                <p>WiSchool</p>
                 <p>We are not here to sell you products, we sell value through our expertise.</p>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-twitter-square"></i>
@@ -339,12 +342,27 @@
         <div class="footer-bottom">
             <p>Subscribe to get latest updates</p>
             <form action="admin">
-            <input type="email" placeholder="Your Email address">
-           <button>Subscribe</button>
+                <input type="email" placeholder="Your Email address">
+                <button>Subscribe</button>
             </form>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/aeacbd87f5.js" crossorigin="anonymous"></script>
+    <script>
+        let hamMenuIcon = document.getElementById("ham-menu");
+        let navBar = document.getElementById("nav-bar");
+        let navLinks = navBar.querySelectorAll("li");
+        hamMenuIcon.addEventListener("click", () => {
+            navBar.classList.toggle("active");
+            hamMenuIcon.classList.toggle("fa-times");
+        });
+        navLinks.forEach((navLinks) => {
+            navLinks.addEventListener("click", () => {
+                navBar.classList.remove("active");
+                hamMenuIcon.classList.toggle("fa-times");
+            });
+        });
+    </script>
 </body>
 
 </html>
