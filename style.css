@@ -17,7 +17,8 @@ nav {
     align-items: center;
     padding: 10px 0;
 }
-#ham-menu{
+
+#ham-menu {
     display: none;
 }
 
@@ -33,10 +34,11 @@ nav ul li {
     margin-right: 20px;
     color: #242243;
 }
-nav ul li:last-child{
+
+nav ul li:last-child {
     margin-left: 130px;
 }
-    
+
 
 .nav-right a,
 .button {
@@ -62,7 +64,7 @@ main {
     border-radius: 50px;
     background-image: linear-gradient(to right, #e4ffff, #fff, #fff);
     margin-top: 30px;
-     box-shadow: inset -100px 0 0 #e4ffff;
+    box-shadow: inset -100px 0 0 #e4ffff;
     font-family: "Poppins";
 }
 
@@ -313,9 +315,10 @@ h1 {
     margin-bottom: 40px;
     display: inline-block;
 }
-.item1 b img{
+
+.item1 b img {
     vertical-align: middle;
-    height: 60px;
+    height: 65px;
 }
 
 .item>p {
@@ -482,9 +485,10 @@ form button {
 }
 
 @media(max-width:767px) {
-    html{
-        font-size: 12px;
+    html {
+        font-size: 14px;
     }
+
     .container {
         width: 97%;
     }
@@ -496,38 +500,40 @@ form button {
 
     }
 
-    
+
     .fa-bars:before {
         content: "\f0c9";
     }
 
-    nav ul{
+    nav ul {
         width: 100vw;
         left: -110%;
         position: fixed;
         top: 73px;
         z-index: 2;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         transition: all .5s;
-       background-color: #fff;
+        background-color: #fff;
         padding: 0;
     }
-    .nav-right{
-       /* padding: 0; */
+
+    .nav-right {
+        /* padding: 0; */
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .active{
+
+    .active {
         display: block;
         left: 0;
     }
-    
-    nav ul li:last-child{
+
+    nav ul li:last-child {
         margin-left: 0;
     }
-    
+
 
     #ham-menu {
         display: block;
@@ -546,7 +552,8 @@ form button {
     .right {
         max-width: 100%;
     }
-    .right img{
+
+    .right img {
         width: 100%;
     }
 
@@ -558,6 +565,10 @@ form button {
     .info-item {
         margin-top: 30px;
         width: 40%;
+    }
+
+    .carusel .text {
+        padding: 0 10px;
     }
 
     .carusel .text b {
@@ -578,12 +589,13 @@ form button {
     .education-main {
         flex-wrap: wrap;
     }
-    .edu-left{
-        padding: 0 50px;
+
+    .edu-left {
+        padding: 0 25px;
     }
 
     .edu-right {
-        padding: 30px;
+        padding: 20px 15px;
     }
 
     .edu-right b {
@@ -599,16 +611,16 @@ form button {
 
     .wrapper .item1 {
         width: 100%;
-        padding: 2rem 0
+        padding: 2rem .8rem;
     }
 
-     .item1  b img {
-        height: 55px;
+    .item1 b img {
+        height: 60px;
     }
 
     .wrapper .item {
         /* width: 40%; */
-      padding: 30px 0px 20px 10px;
+        padding: 30px 0px 20px 10px;
     }
 
     .box {
@@ -621,8 +633,9 @@ form button {
 
     .prev {
         width: 100%;
+        /* padding: 30px; */
     }
-
+   
     .call img {
         display: none;
     }
@@ -649,45 +662,60 @@ form button {
         flex-wrap: wrap;
         padding: 30px 0;
     }
-    .footer ul{
+
+    .footer ul {
         width: 30%;
-     margin-left: 0;
+        margin-left: 0;
         box-sizing: border-box;
     }
 
     .footer .social {
         order: 5;
         margin: 0 auto;
-         width: 80%;
+        width: 80%;
     }
 
     .footer ul:nth-child(5),
     .social p:nth-child(2),
     .footer ul:last-child {
         display: none;
-    }   
-form input{
-    max-width: 100px;
-}
-form button{
-    padding: 8px 10px;
-}
+    }
+
+    form input {
+        max-width: 100px;
+    }
+
+    form button {
+        padding: 8px 10px;
+    }
 }
 
-@media(max-width:570px){
-    .container{
+@media(max-width:570px) {
+    .container {
         width: 100%;
     }
-    .education-main .left{
+
+    .education-main .left {
         padding: 0 5px;
     }
-    .wrap{
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    .wrap {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .slayder .item{
+
+    .slayder .item {
         width: 90%;
     }
-    .footer ul{
-         width: auto; 
+
+    .box .prev {
+        padding: 30px;
+    }
+    .call{
+        background-image: url(./images/image\ 11.png);
+        background-position: center;
+    }
+
+    .footer ul {
+        width: auto;
     }
 }
